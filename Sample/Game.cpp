@@ -24,12 +24,7 @@ void Game::Update(){
 
 	for(int i=0; i<all_block.size(); i++){
 		all_block[i].Update();
-
 	}
-
-    if(CheckHitKey(KEY_INPUT_ESCAPE)!=0){ //Escキーが押されていたら
-        mSceneChanger->ChangeScene(eScene_Menu);//シーンをメニューに変更
-    }
 
 
 	frame++;
